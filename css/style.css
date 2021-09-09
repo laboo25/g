@@ -1,0 +1,211 @@
+@font-face {
+    font-family: zafani;
+    src: url(../fonts/ZefaniStencil\(uppercase\)-Regular.otf);
+    
+}
+@font-face {
+    font-family: cano;
+    src: url(../fonts/Cano.otf);
+      
+}
+@font-face {
+    font-family: cav;
+    src: url(../fonts/CaviarDreams.ttf);
+        
+}
+@font-face {
+    font-family: mitga;
+    src: url(../fonts/FontsFree-Net-BwMitga-Bold.ttf);
+          
+}
+@font-face {
+    font-family: cav-bold;
+    src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+@font-face {
+    font-family: DESIGNER;
+    src: url(../fonts/DESIGNER.otf);
+}
+@font-face {
+    font-family: fontfree;
+    src: url(../fonts/FontsFree-Net-BwMitga-Bold.ttf);
+}
+@font-face {
+    font-family: loves;
+    src: url(../fonts/LOVES.ttf);
+}
+@font-face {
+    font-family: maia;
+    src: url(../fonts/Maia.ttf);
+}
+@font-face {
+    font-family: medal;
+    src: url(../fonts/Medel.ttf);
+}
+@font-face {
+    font-family: qaligo;
+    src: url(../fonts/Qaligo\ Regular\ -\ Demo.otf);
+}
+@font-face {
+    font-family: vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100% !important;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.slider {
+    width: 100%;
+    height: 600px;
+    
+    display:flex;
+}
+.img {
+    flex: 3;
+    height: 600px;
+    
+    background-size: cover;
+}
+
+img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.item {
+    position: relative;
+}
+h2 {
+    font-family: mitga;
+    font-size: 30px;
+    color: cornsilk;
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    text-transform: capitalize;
+    border-bottom: 10px solid yellow;
+    z-index: 2;
+    text-shadow: 0px 0px 4px rgba(20,9,5,0.75);
+}
+.container {
+    width: 1300px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 43px !important;
+}
+.card {
+    width: 200px;
+    height: 300px;
+    margin: 26px !important;
+    background: bisque;
+    position: relative;
+    transition: all linear 0.4s;
+    overflow: hidden;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.43);;
+}
+.card .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.card .name {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    visibility: visible;
+    transition: all linear 0.4s;
+}
+.card .name h3 {
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    font-family: cano;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 240px;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+    
+}
+
+.card .details {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+.card .details p {
+    font-family: loves;
+    color: honeydew;
+    font-size: 12px;
+    word-wrap: break-word;
+    margin-top: 30px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+
+
+
+.card .pin {
+    width: 200px;
+    height: 10px;
+    background: url(../images/others/diamond.jpg);
+    /* background-color: gold; */
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all linear 0.4s;
+}
+.card:hover .name {
+    visibility: hidden;
+}
+.card:hover .details {
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .pin {
+    width: 0px;
+}
+
+
+
+
+
+
+
+
+
